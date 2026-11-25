@@ -1,0 +1,30 @@
+[
+  {
+    "label": "HO3D",
+    "gt": "assets/comparisons/ho3d-gt.png",
+    "pred": "assets/comparisons/ho3d-pred.png",
+    "note": "Spatial reconstruction \u00b7 same RGB crop",
+    "aspect": "1 / 1"
+  },
+  {
+    "label": "DexYCB",
+    "gt": "assets/comparisons/dexycb-gt.png",
+    "pred": "assets/comparisons/dexycb-pred.png",
+    "note": "Spatial reconstruction \u00b7 same RGB crop",
+    "aspect": "1 / 1"
+  },
+  {
+    "label": "H2O",
+    "gt": "assets/comparisons/h2o-gt.png",
+    "pred": "assets/comparisons/h2o-pred.png",
+    "note": "Temporal reconstruction \u00b7 same RGB crop",
+    "aspect": "1 / 1"
+  },
+  {
+    "label": "HOT3D",
+    "gt": "assets/comparisons/hot3d-gt.png",
+    "pred": "assets/comparisons/hot3d-pred.png",
+    "note": "Temporal reconstruction \u00b7 same RGB crop",
+    "aspect": "1 / 1"
+  }
+]

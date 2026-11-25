@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FReSH | Scene–Hand Reconstruction</title>
+<meta name="description" content="FReSH jointly reconstructs scene geometry, hand motion and cameras from sparse, uncalibrated videos. Explore interactive 3D results.">
+<meta name="author" content="Yumeng Liu, Xiao-Xiao Long, Marc Habermann, Xuanze Yang, Cheng Lin, Yuan Liu, Yuexin Ma, Ligang Liu">
+<meta name="theme-color" content="#2563eb"><link rel="icon" href="favicon.svg?v=hands-leaf-green-v4" type="image/svg+xml">
+<link rel="stylesheet" href="static/css/bulma.min.css"><link rel="stylesheet" href="static/css/index.css"><link rel="stylesheet" href="style.css?v=leaf-wordmark-v1">
+</head><body><main id="main-content">
+<section class="hero" id="overview"><div class="hero-body"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column has-text-centered">
+<h1 class="title is-1 publication-title"><span class="publication-brand"><img class="publication-wordmark" src="assets/fresh-mark.svg?v=e-sprout-v1" alt="FReSH" width="570" height="166">:</span> Feed-Forward Joint Reconstruction of Scene-Hand from Uncalibrated Sparse Videos</h1>
+<div class="is-size-5 publication-authors">
+<span class="author-block">Yumeng Liu<sup>1</sup>,</span><span class="author-block">Xiao-Xiao Long<sup>2</sup>,</span><span class="author-block">Marc Habermann<sup>3</sup>,</span><span class="author-block">Xuanze Yang<sup>1</sup>,</span><br class="author-break">
+<span class="author-block">Cheng Lin<sup>4</sup>,</span><span class="author-block">Yuan Liu<sup>5</sup>,</span><span class="author-block">Yuexin Ma<sup>6</sup>,</span><span class="author-block">Ligang Liu<sup>1,*</sup></span>
+</div>
+<div class="publication-authors institutions"><span class="author-block"><sup>1</sup>University of Science and Technology of China</span><span class="author-block"><sup>2</sup>Nanjing University</span><span class="author-block"><sup>3</sup>Max-Planck-Institut für Informatik</span><span class="author-block"><sup>4</sup>Macau University of Science and Technology</span><span class="author-block"><sup>5</sup>Hong Kong University of Science and Technology</span><span class="author-block"><sup>6</sup>ShanghaiTech University</span><br><small class="eql-cntrb"><sup>*</sup>Corresponding author</small></div>
+<div class="publication-links">
+<span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="assets/FReSH-paper.pdf?v=public-20261125" target="_blank" rel="noopener" aria-label="Read the arXiv manuscript (PDF)"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg></span><span>Paper</span></a></span>
+<span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="assets/FReSH-supplementary.pdf?v=public-20261125" target="_blank" rel="noopener" aria-label="Read supplementary material (PDF)"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg></span><span>Supplementary</span></a></span>
+<span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="" onclick="return false;" aria-disabled="true" aria-label="Code link pending"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg></span><span>Code</span></a></span>
+<span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="#video"><span>Video</span></a></span>
+<span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="#explore"><span>Interactive Results</span></a></span>
+</div>
+</div></div></div></div></section>
+
+<section class="hero teaser"><div class="container is-max-desktop"><div class="hero-body"><button aria-label="Enlarge FReSH overview figure" class="image-button" data-enlarge="assets/teaser.png"><img alt="FReSH reconstructs metric scenes, hand motion and cameras from sparse views in two H2O sequences." fetchpriority="high" src="assets/teaser.png"/></button><h2 class="subtitle has-text-centered teaser-caption"><strong>FReSH</strong> turns sparse, uncalibrated videos into metric-scale scenes and world-grounded hand motion with a feed-forward model.</h2></div></div></section>
+<section class="section hero is-light"><div class="container is-max-desktop"><div class="columns is-centered has-text-centered"><div class="column is-four-fifths"><h2 class="title is-3">Overview</h2><div class="content has-text-justified"><p>FReSH jointly reconstructs articulated hands, scene geometry, and camera trajectories from one or a few uncalibrated video streams. Detailed hand observations and global scene context inform one another, while causal memory connects successive reconstructions in a shared metric world.</p></div></div></div></div></section>
+<section class="section" id="video"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Video Overview</h2><div id="project-video" class="project-video"><video controls playsinline preload="metadata" poster="assets/video/poster.jpg?v=layout-v18" aria-label="FReSH project video"><source src="assets/video/fresh-overview.mp4?v=layout-v18" type="video/mp4">Your browser does not support embedded video. <a href="assets/video/fresh-overview.mp4?v=layout-v18">Download the video</a>.</video></div></div></section>
+<section class="section" id="explore"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Interactive 3D Results</h2><p class="section-description has-text-centered">Watch the input video and explore eight sampled reconstructions of each scene.</p><div class="fresh-viewer"><div class="viewer-shell" data-scene-viewer="" id="viewer-shell">
+<div class="viewer-toolbar"><label class="select-label" for="scene-select">Scene <select aria-label="Choose 3D scene" id="scene-select"><option>Loading scenes…</option></select></label><div class="viewer-actions"><button id="reset-scene" title="Reset viewpoint">Reset view</button><button aria-label="Toggle fullscreen" id="fullscreen-scene" title="Open fullscreen viewer">⤢</button></div></div>
+<div class="input-strip"><div class="input-heading"><h3>Input views</h3><span id="input-cameras"></span></div>
+<video id="input-video" controls muted playsinline preload="metadata" aria-label="Input RGB videos for the selected reconstruction"></video>
+<div class="input-caption"><p id="input-note">Loading the corresponding RGB inputs.</p><label><input id="sync-video" type="checkbox" checked> Follow video</label></div></div>
+<div class="sample-toolbar"><span>3D samples</span><div id="reconstruction-samples" class="sample-buttons" aria-label="Reconstruction samples"></div></div>
+<div aria-label="Interactive predicted scene, hand meshes and cameras" id="scene-canvas" role="img" tabindex="0"><p class="canvas-placeholder">Loading reconstruction…</p></div>
+<div class="viewer-bottom"><div class="playback"><button aria-label="Play sequence" id="play-scene">Play</button><input aria-label="Sequence frame" id="frame-slider" max="0" min="0" type="range" value="0"/><output id="frame-label">—</output></div><div class="layers"><span>Show</span><label><input checked="" id="layer-points" type="checkbox"/>Scene</label><label><input checked="" id="layer-hands" type="checkbox"/>Hands</label><label><input checked="" id="layer-cameras" type="checkbox"/>Cameras</label><label class="point-size" for="point-size">Point size <input aria-label="Point size" id="point-size" max="30" min="1" step="1" type="range" value="3"/><output for="point-size" id="point-size-label">3 mm</output></label></div></div>
+<p aria-live="polite" id="scene-status" role="status">Preparing the interactive scene.</p>
+</div></div><p class="fine-print has-text-centered">Drag to orbit · Scroll to zoom · Adjust Point size below the viewer.<br>Eight saved predictions per scene. During video playback, 3D holds the latest sample until the next sampled moment.</p></div></section>
+<section class="section hero is-light" id="method"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Method Overview</h2><p class="section-description has-text-centered">Bidirectional hand–scene exchange, anatomical correspondences across views,<br>and causal memory for motion in a shared world.</p><figure class="method-figure"><button aria-label="Enlarge FReSH method overview" class="image-button" data-enlarge="assets/pipeline.png"><img alt="FReSH framework: bidirectional hand-scene feature exchange, multi-view joint fusion and causal temporal memory with world registration." loading="lazy" src="assets/pipeline.png"/></button></figure></div></section>
+<section class="section" id="BibTeX"><div class="container is-max-desktop content"><div class="bibtex-header"><h2 class="title">BibTeX</h2><button class="copy-bibtex-btn" id="copy-citation" aria-label="Copy BibTeX citation">Copy</button></div><pre id="bibtex"><code>@misc{liu2026fresh,
+  title={FReSH: Feed-Forward Joint Reconstruction of
+    Scene-Hand from Uncalibrated Sparse Videos},
+  author={Liu, Yumeng and Long, Xiao-Xiao and
+    Habermann, Marc and Yang, Xuanze and Lin, Cheng
+    and Liu, Yuan and Ma, Yuexin and Liu, Ligang},
+  year={2026}
+}</code></pre></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="columns is-centered"><div class="column is-8"><div class="content has-text-centered"><p>This page uses the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>, adapted from <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a>.</p><p>Website design and code: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">CC BY-SA 4.0</a>. Paper and research assets retain their respective rights.</p></div></div></div></div></footer>
+<dialog id="image-dialog"><button aria-label="Close enlarged figure" id="close-image">×</button><img alt="Enlarged FReSH figure"/></dialog>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+<script src="page.js?v=no-comparisons" type="module"></script><script src="viewer.js" type="module"></script>
+<script src="project-video.js" type="module"></script>
+</body></html>

@@ -1,0 +1,25 @@
+{
+  "format": "fresh_web_scene_catalog_v1",
+  "model": "FReSH \u00b7 spatial 52,899 + temporal finetuning 1,000",
+  "checkpoint_sha256": "5320c769cfe53fa29f5ff048bcc28189ea175cbffb494494c3d26a26e9c36d84",
+  "scenes": [
+    {
+      "id": "h2o-office",
+      "label": "H2O \u00b7 Office",
+      "url": "h2o-office/manifest.json",
+      "scope": "8 sampled observations \u00b7 3 input views \u00b7 native predicted geometry"
+    },
+    {
+      "id": "ho3d-gpmf1",
+      "label": "HO3D \u00b7 Object interaction",
+      "url": "ho3d-gpmf1/manifest.json",
+      "scope": "8 sampled observations \u00b7 3 input views \u00b7 native predicted geometry"
+    },
+    {
+      "id": "h2o-home",
+      "label": "H2O \u00b7 Home",
+      "url": "h2o-home/manifest.json",
+      "scope": "8 sampled observations \u00b7 3 input views \u00b7 native predicted geometry"
+    }
+  ]
+}

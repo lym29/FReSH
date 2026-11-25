@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+
+# PDF assets are explicitly allowlisted.
+*.pdf
+# Public paper and supplementary material.
+!assets/FReSH-paper.pdf
+!assets/FReSH-supplementary.pdf
